@@ -14,9 +14,16 @@ namespace DatabasesCarPartsShop
     
     public partial class Car
     {
+        public Car()
+        {
+            this.Parts = new HashSet<Part>();
+        }
+    
         public int CarID { get; set; }
         public string Brand { get; set; }
         public string Model { get; set; }
         public string ProductionYear { get; set; }
+    
+        public virtual ICollection<Part> Parts { get; set; }
     }
 }

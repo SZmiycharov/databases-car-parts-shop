@@ -20,7 +20,9 @@ namespace DatabasesCarPartsShop
         public Nullable<float> BuyPrice { get; set; }
         public Nullable<float> SellPrice { get; set; }
         public Nullable<int> ShopID { get; set; }
+        public int CarID { get; set; }
     
+        public virtual Car Car { get; set; }
         public virtual Shop Shop { get; set; }
     }
 }

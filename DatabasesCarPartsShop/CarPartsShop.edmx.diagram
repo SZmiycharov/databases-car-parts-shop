@@ -5,12 +5,13 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="8007bf6b50f34fcab7bbd4ca8e284608" Name="Diagram1">
-        <EntityTypeShape EntityType="CarPartsShopModel.Car" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CarPartsShopModel.Manufacturer" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CarPartsShopModel.Part" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="CarPartsShopModel.Shop" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="CarPartsShopModel.sysdiagram" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
-        <AssociationConnector Association="CarPartsShopModel.FK_Part_Part" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="CarPartsShopModel.Car" Width="1.5" PointX="0.75" PointY="1.375" />
+        <EntityTypeShape EntityType="CarPartsShopModel.Manufacturer" Width="1.5" PointX="2.75" PointY="4.75" />
+        <EntityTypeShape EntityType="CarPartsShopModel.Part" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="CarPartsShopModel.Shop" Width="1.5" PointX="0.75" PointY="5.5" />
+        <EntityTypeShape EntityType="CarPartsShopModel.sysdiagram" Width="1.5" PointX="4.75" PointY="4.75" />
+        <AssociationConnector Association="CarPartsShopModel.FK_Part_Part" />
+        <AssociationConnector Association="CarPartsShopModel.FK_Part_Shop" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
